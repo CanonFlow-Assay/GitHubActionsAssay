@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "profile": "bound-run",
+  "files": {
+    "run": "run.json",
+    "jobs": "jobs.json",
+    "artifacts": "artifacts.json",
+    "archive": "archive.zip",
+    "workflow": "playground.yml",
+    "runner": "runner.json",
+    "scopedLog": "selected.log"
+  },
+  "expects": {
+    "repository": "CanonFlow-Assay/CSharpAssay.Playground",
+    "workflowPath": ".github/workflows/playground.yml",
+    "workflowSha256": "053a9f245f154f1d889dfc31ebf1f3ac23e7c0eb78e2464692cb75ed0dc647c7",
+    "headSha": "da724b67cc4e27f2698ac10f247a8f08065c9ec1",
+    "runId": 44739374322,
+    "attempt": 1,
+    "job": ".NET 11 native evidence gate",
+    "checkoutStep": "Checkout matching CSharpAssay source",
+    "packageStep": "Build local .NET 11 packages",
+    "gates": [
+      "Build local .NET 11 packages",
+      "Run playground gate",
+      "Verify the payment saga and its negative controls"
+    ],
+    "engine": {
+      "repository": "CanonFlow-Assay/CSharpAssay",
+      "sha": "92af5f6a702890e7c65f35df8cb596c5a0a60161"
+    },
+    "sdkVersion": "11.0.100",
+    "sdkMember": "refined/verify.json",
+    "artifact": "csharp-assay-net11-evidence",
+    "packages": {
+      "CsAssay.Tool": "c68bcbad4d57c78bc0578a4601427bb1f9062b02f0d4e0e22a1df7bdf8825473"
+    }
+  }
+}

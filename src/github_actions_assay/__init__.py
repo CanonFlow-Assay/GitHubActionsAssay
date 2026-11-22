@@ -1,0 +1,1 @@
+"""GitHubActionsAssay evidence verifier."""

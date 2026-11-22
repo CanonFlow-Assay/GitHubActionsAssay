@@ -1,0 +1,14 @@
+{
+  "assay": "GitHubActionsAssay",
+  "profile": "bound-run",
+  "rules": [
+    {"id": "GH001", "predicate": "Repository, run attempt, workflow path and source SHA match the plan."},
+    {"id": "GH002", "predicate": "GitHub records success for the completed attempt."},
+    {"id": "GH003", "predicate": "Every selected gate ran successfully in the unique planned job."},
+    {"id": "GH004", "predicate": "Selected checkout evidence records the expected engine repository and actual HEAD."},
+    {"id": "GH005", "predicate": "The downloaded artifact matches the live GitHub SHA-256, run, and length."},
+    {"id": "GH006", "predicate": "An authoritative run artifact binds the required actually observed SDK version."},
+    {"id": "GH007", "predicate": "The selected producer step records the reviewed package identities."},
+    {"id": "GH008", "predicate": "The supplied workflow bytes match the reviewed policy digest."}
+  ]
+}
